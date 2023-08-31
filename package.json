@@ -1,0 +1,38 @@
+{
+  "name": "@atmulyana/qr-code",
+  "version": "0.0.1",
+  "license": "MIT",
+  "repository": "https://github.com/atmulyana/qr-code",
+  "description": "This package is to generate QRCode. It's a rewritten code of 'https://github.com/defunctzombie/qr.js' with some enhancements.",
+  "keywords": [
+    "qrcode",
+    "QRCode",
+    "QR",
+    "qr",
+    "code"
+  ],
+  "main": "index.js",
+  "react-native": "lib/index.js",
+  "files": [
+    "dist",
+    "lib",
+    "index.js",
+    "index.d.ts",
+    "index.js.flow"
+  ],
+  "scripts": {
+    "build": "flow-remove-types -p lib/ -d dist/",
+    "flow": "flow",
+    "prepublish": "npm run build"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "dependencies": {
+    "utf16-to-sjis": "^1.1.1"
+  },
+  "devDependencies": {
+    "flow-bin": "*",
+    "flow-remove-types": "^2.215.1"
+  }
+}

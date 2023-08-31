@@ -1,0 +1,6 @@
+//https://github.com/atmulyana/qr-code
+//@flow strict-local
+export type * from './lib';
+
+const qrcode = require('./lib');
+export default qrcode;
